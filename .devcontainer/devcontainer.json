@@ -1,0 +1,17 @@
+{
+    "build": {"dockerfile": "Dockerfile"},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "christian-kohler.npm-intellisense",
+                "mgmcdermott.vscode-language-babel",
+                "p42ai.refactor",
+                "xabikos.javascriptsnippets",
+                "akamud.vscode-javascript-snippet-pack",
+                "loiane.ts-extension-pack",
+                "ms-vscode.vscode-typescript-tslint-plugin"
+            ]
+        }
+    },
+    "forwardPorts": [3000, 8000]
+}
