@@ -50,21 +50,20 @@ namespace AddMoneyTransfer {
     contabile
       .getRange(`A${startRow}:A${startRow+1}`)
       .setValue(dateString);
-  
     contabile
       .getRange(`B${startRow}:B${startRow+1}`)
       .setValue(`${output} -> ${input}`);
   
     contabile
       .getRange(`E${startRow}`)
-      .setValue(input);
-    contabile
-      .getRange(`E${startRow+1}`)
       .setValue(output);
-  
     contabile
       .getRange(`G${startRow}`)
       .setValue(`-${amountString}`);
+
+    contabile
+      .getRange(`E${startRow+1}`)
+      .setValue(input);
     contabile
       .getRange(`G${startRow+1}`)
       .setValue(amountString);
