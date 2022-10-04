@@ -12,10 +12,10 @@ namespace InputModal {
         Fragments.defaultHead(
           Fragments.htmlStyle(`
             body     { font-family: Roboto, Arial, Consolas, sans-serif; }
-            form     { display: table; padding: 5px; }
-            form div { display: table-row; padding: 5px;  }
-            label    { display: table-cell; padding: 5px; }
-            input    { display: table-cell; padding: 5px; }
+            form     { display: table; padding: 10px; }
+            form div { display: table-row; padding: 10px;  }
+            label    { display: table-cell; padding: 10px; }
+            input    { display: table-cell; padding: 10px; }
             button   { display: table-cell; padding: 10px; }
           `)
         ),

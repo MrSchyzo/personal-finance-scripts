@@ -5,6 +5,7 @@ Either use `devcontainers` in VSCode or, locally, you need:
 - `clasp`, globally
 
 ## How to develop and deploy
+- `clasp login`
 - copy `.clasp.json.example` to `clasp.json`
-- change `<some_script_id>` with your script id
+- change `<some_script_id>` with your script id, if you don't have one, create a script
 - `clasp push --watch`

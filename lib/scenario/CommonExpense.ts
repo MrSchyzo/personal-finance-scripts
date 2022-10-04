@@ -2,6 +2,7 @@
 /// <reference path="../ui/Fragments.ts"/>
 /// <reference path="Commons.ts"/>
 /// <reference path="../SheetsUtils.ts"/>
+/// <reference path="../FormatUtils.ts"/>
 /// <reference path="../modal/InputModal.ts"/>
 
 namespace CommonExpense {
@@ -49,8 +50,8 @@ namespace CommonExpense {
     let {date, economic, financial, label, amount} = model;
 
     const contabile = SheetsUtils.getSheet("Contabile");
-    const dateString = date.toString().split("-").reverse().join("/");
-    const amountString = amount.toString().replace(",", "").replace(".", ",")
+    const dateString = FormatUtils.dateToString(date);
+    const amountString = FormatUtils.numberToString(amount);
     const startRow = SheetsUtils.nextFreeRow("A", contabile);
   
     contabile
@@ -82,6 +83,6 @@ namespace CommonExpense {
     const configuration = SheetsUtils.loadSheetConfiguration()
     const model = new Model(new Date(), "", "", "", 0).inputMetadata(configuration)
   
-    InputModal.show(model, 'commonExpense', "Spesa comune con Ramona");
+    InputModal.show(model, 'commonExpense', "Variazione in comune con Ramona");
   };
 }
