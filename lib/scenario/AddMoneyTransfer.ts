@@ -72,10 +72,10 @@ namespace AddMoneyTransfer {
     contabile.getRange(`B${startRow}:B${startRow + 1}`).setValue(description);
 
     contabile.getRange(`E${startRow}`).setValue(output);
-    contabile.getRange(`G${startRow}`).setValue(`-${amountString}`);
+    contabile.getRange(`G${startRow}`).setValue(`=-${amountString}`);
 
     contabile.getRange(`E${startRow + 1}`).setValue(input);
-    contabile.getRange(`G${startRow + 1}`).setValue(amountString);
+    contabile.getRange(`G${startRow + 1}`).setValue(`=${amountString}`);
   }
 
   export function entrypoint() {

@@ -72,7 +72,7 @@ namespace CommonExpense {
   
     contabile
       .getRange(`G${startRow}`)
-      .setValue(amountString);
+      .setValue(`=${amountString}`);
   
     contabile
       .getRange(`I${startRow}`)

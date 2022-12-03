@@ -100,7 +100,7 @@ namespace SplitEconomicVariation {
     contabile.getRange(`B${myRow}`).setValue(`${label} - parte mia`);
     contabile.getRange(`C${myRow}`).setValue(economic);
     contabile.getRange(`E${myRow}`).setValue(financial);
-    contabile.getRange(`G${myRow}`).setValue(myAmount);
+    contabile.getRange(`G${myRow}`).setValue(`=${myAmount}`);
 
     contabile.getRange(`A${otherRow}`).setValue(dateString);
     contabile.getRange(`B${otherRow}`).setValue(`${label} - anticipo altrui`);

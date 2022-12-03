@@ -72,7 +72,7 @@ namespace EconomicVariation {
   
     contabile
       .getRange(`G${startRow}`)
-      .setValue(amountString);
+      .setValue(`=${amountString}`);
   }
   
   export function entrypoint() {
